@@ -1,0 +1,51 @@
+﻿@model VeterinaryApplication.Models.Pet
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Pet</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Age)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Age)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Owner)
+        </dt>
+        <dd class = "col-sm-10">
+
+            @Model.Owner.getFirstNameAndLastName()
+
+
+
+        </dd>
+        <dt class="col-sm-2">
+            Vaccines
+        </dt>
+        <dd class="col-sm-10">
+            <ul style="list-style-type: none;  padding: 0;">
+                @foreach (var vaccine in Model.Vaccines)
+                {
+                    <li>@vaccine.Name</li>
+                }
+            </ul>
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.PetId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

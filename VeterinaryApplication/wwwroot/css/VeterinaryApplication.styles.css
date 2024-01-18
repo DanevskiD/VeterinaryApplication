@@ -1,0 +1,109 @@
+﻿/* VeterinaryApplication.styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FEF9E7 !important;
+}
+
+/* Header styles */
+header {
+    background-color: #f8f8f8;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+}
+
+    .navbar-brand:hover, .nav-link:hover {
+        color: #34495E !important;
+        font-weight: 600;
+        transform:scale(1.05);
+    }
+
+    .navbar-brand img {
+        max-width: 50px;
+        margin-right: 10px;
+    }
+
+    .navbar-brand span {
+        font-size: 18px;
+    }
+
+/* Navigation styles */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #FCF3CF !important;
+}
+
+.navbar-nav {
+    flex-grow: 1;
+}
+
+.nav-item {
+    margin-right: 10px;
+    font-weight: 600;
+}
+
+.nav-link {
+    color: #333;
+}
+
+/* Main container styles */
+.main-container {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 10px;
+    background-color: #FEF9E7 !important;
+    height: 600px;
+}
+h1 {
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+main p {
+    margin-bottom: 50px;
+}
+/*Main link style*/
+main p a {
+    text-decoration: none !important;
+    color: #34495E;
+    border: 1px solid #34495E;
+    padding:10px 25px;
+    font-weight:600;
+    
+}
+main table a, main div a {
+    text-decoration: none !important;
+    color: #34495E;
+    padding: 5px;
+    font-weight: 600;
+}
+    main p a:hover, main table a:hover, main div a:hover {
+        color: #1C2833 !important;
+    }
+/* Footer styles */
+.footer {
+
+    border-top: 1px solid #ccc;
+    padding: 10px;
+    background-color: #34495E;
+    color: #ffffff;
+    text-align: center !important;
+}
+
+.text-muted {
+    color: #ffffff !important;
+}
+
+.privacy-link {
+    color: #ffffff !important;
+    text-decoration: none;
+}
+
